@@ -6,7 +6,6 @@ const numbersEl = document.getElementById("numbers");
 const symbolsEl = document.getElementById("symbols");
 const generateEl = document.getElementById("generate");
 const clipboardEl = document.getElementById("clipboard");
-const inputs = document.querySelectorAll("input");
 
 const ALPHABETS = "qwertyuiopasdfghjklzxcvbnm";
 
@@ -24,7 +23,6 @@ function getRandomNumber() {
 }
 
 function getRandomSymbol() {
-  // const symbols = "!@#$%^&*?";
   const symbols = "!@#$%^&*(){}[]=<>/,.?";
   return symbols[Math.floor(Math.random() * symbols.length)];
 }
@@ -79,6 +77,7 @@ generateEl.addEventListener("click", function (e) {
 });
 
 clipboardEl.addEventListener("click", () => {
+  //Copy to clipboard
   navigator.clipboard.writeText(resultEl.textContent);
   clipboardEl.classList.add("copied");
 

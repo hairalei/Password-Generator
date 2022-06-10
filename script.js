@@ -77,6 +77,8 @@ generateEl.addEventListener("click", function (e) {
 });
 
 clipboardEl.addEventListener("click", () => {
+  if (!resultEl.textContent) return;
+
   //Copy to clipboard
   navigator.clipboard.writeText(resultEl.textContent);
   clipboardEl.classList.add("copied");

@@ -8,6 +8,6 @@ https://hairalei.github.io/Password-Generator/
 
 ## Features
 
-- Controllable length form 4 to 20 characters
+- Includes Copy to clipboard
+- Controllable length from 4 to 20 characters
 - Checkbox for including uppercase, lowercase, numbers, and symbols
-- Incluldes Copy to clipboard
